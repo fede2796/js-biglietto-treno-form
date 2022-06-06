@@ -14,6 +14,12 @@
         //Offerta//
         const useroffert = document.getElementById ('ticket-offerts').value;
 
+        //Numero Carrozza//
+        const usercarrozza = Math.floor(Math.random() * 10);
+
+        //Codice CP//
+        const codicecp = Math.floor(Math.random() * 10000);
+
         //Prezzo Biglietto//
         const price = userkm * 0.21;
         let discount = 0 ;
@@ -27,14 +33,14 @@
         }
 
         //Offerta//
-        if(useroffert === 'minorenne'){
-            useroffert =  document.getElementById('ticket-offerts').value = 'Biglietto Minorenne';
+        if(userage === 'minorenne'){
+            const useroffert = document.getElementById ('ticket-offerts').value = 'Standard Minorenne';
         }
-        else if(useroffert === 'over'){
-            document.getElementById('ticket-offerts').value = 'Biglietto Over'
+        else if(userage === 'over'){
+            const useroffert = document.getElementById ('ticket-offerts').value = 'Standar Over';
         }
         else{
-            document.getElementById('ticket-offerts').value = 'Biglietto Standard'
+            const useroffert = document.getElementById ('ticket-offerts').value = 'Standard';
         }
         //Prezzo Finale//
         const finalprice = price - discount;
@@ -42,7 +48,10 @@
         document.getElementById('ticket-name').innerHTML = username;
         document.getElementById('ticket-price').innerHTML = finalprice.toFixed(2);
         document.getElementById('ticket-offerts').innerHTML = useroffert;
+        document.getElementById('ticket-carrozza').innerHTML = usercarrozza;
+        document.getElementById('ticket-codicecp').innerHTML = codicecp;
         document.getElementById('ticket').classList.add('active');
+      
     }
     );
 
