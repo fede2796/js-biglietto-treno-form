@@ -4,9 +4,17 @@
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
+body{
+    background-color: red;
+}
+.user-form{
+    display: flex;
+    justify-content: center;
+}
+
 .form-item{
     padding: 20px 10px;
-
+    text-align: center;
 }
 .ticket{
     display: none;
@@ -16,4 +24,9 @@
 }
 .ticket.disactive{
     display: none;
+}
+.ticket{
+    text-align: center;
+    justify-content: center;
+    padding: 20px 40px;
 }
