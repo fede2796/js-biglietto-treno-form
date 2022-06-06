@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+.form-item{
+    padding: 20px 10px;
+
+}
+.ticket{
+    display: none;
+}
+.ticket.active{
+    display: block;
+}
+.ticket.disactive{
+    display: none;
+}
